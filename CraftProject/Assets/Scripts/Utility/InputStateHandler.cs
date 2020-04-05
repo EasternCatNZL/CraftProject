@@ -33,15 +33,7 @@ public class InputStateHandler : MonoBehaviour
     //When attached object is activated
     private void Awake()
     {
-        //Check that only one instance of this class exists
-        if(!handler && handler != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            handler = this;
-        }
+
     }
 
     public static void ChangeGameState(CurrentControlState newState)

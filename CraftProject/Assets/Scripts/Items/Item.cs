@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+    public enum ItemType
+    {
+        Material,
+        Tool,
+        Equipment,
+        Key
+    }
+
+    public ItemType type = ItemType.Material;
+
     // Start is called before the first frame update
     void Start()
     {
