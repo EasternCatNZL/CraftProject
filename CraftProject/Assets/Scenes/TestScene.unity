@@ -356,7 +356,7 @@ MonoBehaviour:
     m_ActionName: Game/Move[/XInputControllerWindows/leftStick]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Gamepad
-  m_DefaultActionMap: Menu
+  m_DefaultActionMap: Game
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!4 &443943196
@@ -411,7 +411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursor: {fileID: 0}
   pauseComponents: {fileID: 0}
-  playerInput: {fileID: 0}
+  playerInput: {fileID: 443943195}
+  currentMenu: {fileID: 0}
   currentItem: {fileID: 0}
 --- !u!114 &443943200
 MonoBehaviour:
@@ -526,7 +527,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

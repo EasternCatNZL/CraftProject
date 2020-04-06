@@ -32,7 +32,7 @@ public class @PlayerInputAction : IInputActionCollection, IDisposable
                     ""id"": ""febd8e0f-53a1-4b43-8d7d-93871ac35446"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 },
                 {
                     ""name"": ""Cancel"",
@@ -40,7 +40,7 @@ public class @PlayerInputAction : IInputActionCollection, IDisposable
                     ""id"": ""b73764ed-d405-4e59-ba66-7f7dcbd0ca45"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 },
                 {
                     ""name"": ""QuickUtility"",
@@ -48,7 +48,7 @@ public class @PlayerInputAction : IInputActionCollection, IDisposable
                     ""id"": ""cb1f9dd9-b1fb-4faa-9681-799cdf511f1a"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 },
                 {
                     ""name"": ""DetailedUtility"",
@@ -56,7 +56,7 @@ public class @PlayerInputAction : IInputActionCollection, IDisposable
                     ""id"": ""043e0bed-2f9d-418e-a033-3ae3ebd2bf05"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 },
                 {
                     ""name"": ""PageUp"",
@@ -64,7 +64,7 @@ public class @PlayerInputAction : IInputActionCollection, IDisposable
                     ""id"": ""f6c0aea8-8289-4101-892c-988afd0dc7f2"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 },
                 {
                     ""name"": ""PageDown"",
@@ -72,7 +72,7 @@ public class @PlayerInputAction : IInputActionCollection, IDisposable
                     ""id"": ""86a4a472-abf7-4b2a-9692-eb33c3e30938"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 },
                 {
                     ""name"": ""ExitMenu"",
@@ -80,7 +80,7 @@ public class @PlayerInputAction : IInputActionCollection, IDisposable
                     ""id"": ""2c9f62c4-05b6-4e1d-90b7-e00b6bb21241"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 }
             ],
             ""bindings"": [
@@ -316,7 +316,7 @@ public class @PlayerInputAction : IInputActionCollection, IDisposable
                     ""id"": ""3fbc7dbf-9457-4570-a3b0-c3495a879bed"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 },
                 {
                     ""name"": ""Move"",

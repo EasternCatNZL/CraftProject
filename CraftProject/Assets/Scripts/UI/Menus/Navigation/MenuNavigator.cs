@@ -47,8 +47,28 @@ public class MenuNavigator : MonoBehaviour
     {
         //Deactivate all menu items related
         myMenuGroup.SetActive(false);
-        
-        
+
+        //check for previous menu
+        if (myParentMenu)
+        {
+            //go back to previous menu is valid
+            PlayerMenuInput.Instance.currentMenu = myParentMenu;
+            PlayerMenuInput.Instance.currentItem = myParentItem;
+        }
+    }
+
+    //On menu close all
+    public virtual void CloseAll()
+    {
+        //Deactivate all menu items related
+        myMenuGroup.SetActive(false);
+
+        //check for previous menu
+        if (myParentMenu)
+        {
+            //Have previous menu also close itself
+            myParentMenu.CloseAll();
+        }
     }
 
     //When an item is hovered over
@@ -112,6 +132,37 @@ public class MenuNavigator : MonoBehaviour
     //When cancel is inputted
     public virtual void Cancel()
     {
+
+    }
+
+    //When menu utility button is pressed
+    public virtual void QuickUtil()
+    {
+
+    }
+
+    //When menu detailed button is pressed
+    public virtual void DetailedUtil()
+    {
+
+    }
+
+    //When page up is pressed
+    public virtual void PageUp()
+    {
+
+    }
+
+    //When page down is pressed
+    public virtual void PageDown()
+    {
+
+    }
+
+    //When exit menu is pressed
+    public virtual void ExitMenu()
+    {
+        CloseMenu();
 
     }
 }

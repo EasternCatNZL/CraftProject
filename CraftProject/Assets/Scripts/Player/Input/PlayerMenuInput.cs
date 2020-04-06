@@ -15,7 +15,7 @@ public class PlayerMenuInput : MonoBehaviour
     public PlayerInputAction inputAction;
 
     //Currently controlled menu
-    MenuNavigator currentMenu = null;
+    public MenuNavigator currentMenu = null;
 
     //Current menu item that is selected
     public MenuItem currentItem = null;
@@ -26,10 +26,13 @@ public class PlayerMenuInput : MonoBehaviour
     //Input system controls
     private Vector2 movementInput;
 
+    //Temp control
+    bool menuOpen = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     //When attached object is activated
@@ -41,12 +44,19 @@ public class PlayerMenuInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (menuOpen)
+        {
+            if (currentMenu)
+            {
+                GetMoveInput(movementInput);
+            }
+        }           
     }
 
     private void OnEnable()
     {
         inputAction.Menu.Enable();
+
         inputAction.Game.Move.performed += Move;
         inputAction.Game.Move.performed += Confirm;
         inputAction.Game.Move.performed += Cancel;
@@ -55,52 +65,88 @@ public class PlayerMenuInput : MonoBehaviour
         inputAction.Game.Move.performed += PageUp;
         inputAction.Game.Move.performed += PageDown;
         inputAction.Game.Move.performed += ExitMenu;
-    }
 
-    private void ExitMenu(InputAction.CallbackContext obj)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void PageDown(InputAction.CallbackContext obj)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void PageUp(InputAction.CallbackContext obj)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void DetailedUtility(InputAction.CallbackContext obj)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void QuickUtility(InputAction.CallbackContext obj)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void Cancel(InputAction.CallbackContext obj)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void Confirm(InputAction.CallbackContext obj)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void Move(InputAction.CallbackContext obj)
-    {
-        throw new NotImplementedException();
+        inputAction.Game.Move.Enable();
+        inputAction.Game.Move.Enable();
+        inputAction.Game.Move.Enable();
+        inputAction.Game.Move.Enable();
+        inputAction.Game.Move.Enable();
+        inputAction.Game.Move.Enable();
+        inputAction.Game.Move.Enable();
+        inputAction.Game.Move.Enable();
     }
 
     private void OnDisable()
     {
+        inputAction.Game.Move.performed -= Move;
+        inputAction.Game.Move.performed -= Confirm;
+        inputAction.Game.Move.performed -= Cancel;
+        inputAction.Game.Move.performed -= QuickUtility;
+        inputAction.Game.Move.performed -= DetailedUtility;
+        inputAction.Game.Move.performed -= PageUp;
+        inputAction.Game.Move.performed -= PageDown;
+        inputAction.Game.Move.performed -= ExitMenu;
+
+        inputAction.Game.Move.Disable();
+        inputAction.Game.Move.Disable();
+        inputAction.Game.Move.Disable();
+        inputAction.Game.Move.Disable();
+        inputAction.Game.Move.Disable();
+        inputAction.Game.Move.Disable();
+        inputAction.Game.Move.Disable();
+        inputAction.Game.Move.Disable();
+
         inputAction.Menu.Disable();
     }
+
+    private void ExitMenu(InputAction.CallbackContext obj)
+    {
+        if (currentMenu)
+            currentMenu.ExitMenu();
+    }
+
+    private void PageDown(InputAction.CallbackContext obj)
+    {
+        if (currentMenu)
+            currentMenu.PageDown();
+    }
+
+    private void PageUp(InputAction.CallbackContext obj)
+    {
+        if (currentMenu)
+            currentMenu.PageUp();
+    }
+
+    private void DetailedUtility(InputAction.CallbackContext obj)
+    {
+        if (currentMenu)
+            currentMenu.DetailedUtil();
+    }
+
+    private void QuickUtility(InputAction.CallbackContext obj)
+    {
+        if (currentMenu)
+            currentMenu.QuickUtil();
+    }
+
+    private void Cancel(InputAction.CallbackContext obj)
+    {
+        if(currentMenu)
+        currentMenu.Cancel();
+    }
+
+    private void Confirm(InputAction.CallbackContext obj)
+    {
+        if(currentItem)
+        currentItem.Select();
+    }
+
+    private void Move(InputAction.CallbackContext obj)
+    {
+        movementInput = obj.ReadValue<Vector2>();
+    }
+
+
 
     public static PlayerMenuInput Instance
     {
@@ -123,9 +169,8 @@ public class PlayerMenuInput : MonoBehaviour
     }
 
     //Recieve movement input from player and pass it on to menu navigation
-    public void GetMoveInput(InputValue playerInput)
+    public void GetMoveInput(Vector2 input)
     {
-        Vector2 input = playerInput.Get<Vector2>();
         currentMenu.GetMoveInput(input);
     }
 
@@ -133,6 +178,6 @@ public class PlayerMenuInput : MonoBehaviour
     public void ConfirmButton()
     {
         //Sends the call to the currently selected item
-        currentItem.Selected();
+        currentItem.Highlighted();
     }
 }

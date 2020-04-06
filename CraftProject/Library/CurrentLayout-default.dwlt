@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 514
     width: 1142
     height: 473
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 601, y: 542}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 185
+  controlID: 224
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 515
     width: 338
     height: 472
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 16}
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 210
+  controlID: 205
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,10 +175,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 1078, y: 542}
-  m_MaxSize: {x: 12003, y: 8042}
+  m_MinSize: {x: 1079, y: 542}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 281
+  controlID: 245
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,8 +198,8 @@ MonoBehaviour:
     y: 0
     width: 440
     height: 987
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -439,32 +439,32 @@ MonoBehaviour:
       {\n                    \"name\": \"Confirm\",\n                    \"type\":
       \"Button\",\n                    \"id\": \"febd8e0f-53a1-4b43-8d7d-93871ac35446\",\n                   
       \"expectedControlType\": \"\",\n                    \"processors\": \"\",\n                   
-      \"interactions\": \"\"\n                },\n                {\n                   
-      \"name\": \"Cancel\",\n                    \"type\": \"Button\",\n                   
-      \"id\": \"b73764ed-d405-4e59-ba66-7f7dcbd0ca45\",\n                    \"expectedControlType\":
-      \"\",\n                    \"processors\": \"\",\n                    \"interactions\":
-      \"\"\n                },\n                {\n                    \"name\":
-      \"QuickUtility\",\n                    \"type\": \"Button\",\n                   
-      \"id\": \"cb1f9dd9-b1fb-4faa-9681-799cdf511f1a\",\n                    \"expectedControlType\":
-      \"\",\n                    \"processors\": \"\",\n                    \"interactions\":
-      \"\"\n                },\n                {\n                    \"name\":
-      \"DetailedUtility\",\n                    \"type\": \"Button\",\n                   
-      \"id\": \"043e0bed-2f9d-418e-a033-3ae3ebd2bf05\",\n                    \"expectedControlType\":
-      \"\",\n                    \"processors\": \"\",\n                    \"interactions\":
-      \"\"\n                },\n                {\n                    \"name\":
-      \"PageUp\",\n                    \"type\": \"Button\",\n                   
-      \"id\": \"f6c0aea8-8289-4101-892c-988afd0dc7f2\",\n                    \"expectedControlType\":
-      \"\",\n                    \"processors\": \"\",\n                    \"interactions\":
-      \"\"\n                },\n                {\n                    \"name\":
-      \"PageDown\",\n                    \"type\": \"Button\",\n                   
-      \"id\": \"86a4a472-abf7-4b2a-9692-eb33c3e30938\",\n                    \"expectedControlType\":
-      \"\",\n                    \"processors\": \"\",\n                    \"interactions\":
-      \"\"\n                },\n                {\n                    \"name\":
-      \"ExitMenu\",\n                    \"type\": \"Button\",\n                   
-      \"id\": \"2c9f62c4-05b6-4e1d-90b7-e00b6bb21241\",\n                    \"expectedControlType\":
-      \"Button\",\n                    \"processors\": \"\",\n                   
-      \"interactions\": \"\"\n                }\n            ],\n            \"bindings\":
-      [\n                {\n                    \"name\": \"2D Vector\",\n                   
+      \"interactions\": \"Press(behavior=2)\"\n                },\n               
+      {\n                    \"name\": \"Cancel\",\n                    \"type\":
+      \"Button\",\n                    \"id\": \"b73764ed-d405-4e59-ba66-7f7dcbd0ca45\",\n                   
+      \"expectedControlType\": \"\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"Press(behavior=2)\"\n                },\n               
+      {\n                    \"name\": \"QuickUtility\",\n                    \"type\":
+      \"Button\",\n                    \"id\": \"cb1f9dd9-b1fb-4faa-9681-799cdf511f1a\",\n                   
+      \"expectedControlType\": \"\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"Press(behavior=2)\"\n                },\n               
+      {\n                    \"name\": \"DetailedUtility\",\n                   
+      \"type\": \"Button\",\n                    \"id\": \"043e0bed-2f9d-418e-a033-3ae3ebd2bf05\",\n                   
+      \"expectedControlType\": \"\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"Press(behavior=2)\"\n                },\n               
+      {\n                    \"name\": \"PageUp\",\n                    \"type\":
+      \"Button\",\n                    \"id\": \"f6c0aea8-8289-4101-892c-988afd0dc7f2\",\n                   
+      \"expectedControlType\": \"\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"Press(behavior=2)\"\n                },\n               
+      {\n                    \"name\": \"PageDown\",\n                    \"type\":
+      \"Button\",\n                    \"id\": \"86a4a472-abf7-4b2a-9692-eb33c3e30938\",\n                   
+      \"expectedControlType\": \"\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"Press(behavior=2)\"\n                },\n               
+      {\n                    \"name\": \"ExitMenu\",\n                    \"type\":
+      \"Button\",\n                    \"id\": \"2c9f62c4-05b6-4e1d-90b7-e00b6bb21241\",\n                   
+      \"expectedControlType\": \"Button\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"Press(behavior=2)\"\n                }\n            ],\n           
+      \"bindings\": [\n                {\n                    \"name\": \"2D Vector\",\n                   
       \"id\": \"36519dc9-f7c1-42cd-910e-971ca02e98d7\",\n                    \"path\":
       \"2DVector\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
@@ -576,8 +576,8 @@ MonoBehaviour:
       \"actions\": [\n                {\n                    \"name\": \"Menu\",\n                   
       \"type\": \"Button\",\n                    \"id\": \"3fbc7dbf-9457-4570-a3b0-c3495a879bed\",\n                   
       \"expectedControlType\": \"\",\n                    \"processors\": \"\",\n                   
-      \"interactions\": \"\"\n                },\n                {\n                   
-      \"name\": \"Move\",\n                    \"type\": \"PassThrough\",\n                   
+      \"interactions\": \"Press(behavior=2)\"\n                },\n               
+      {\n                    \"name\": \"Move\",\n                    \"type\": \"PassThrough\",\n                   
       \"id\": \"bd7d6294-2d9e-47f9-beea-aae00687d4dd\",\n                    \"expectedControlType\":
       \"Vector2\",\n                    \"processors\": \"\",\n                   
       \"interactions\": \"\"\n                }\n            ],\n            \"bindings\":
@@ -637,7 +637,7 @@ MonoBehaviour:
     m_IsDirty: 0
   m_Toolbar:
     m_IsDirty: 0
-    m_SelectedControlSchemeIndex: 1
+    m_SelectedControlSchemeIndex: 0
     m_SelectedDeviceRequirementIndex: -1
     m_ControlSchemes:
     - m_Name: Gamepad
@@ -755,7 +755,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1143
+    x: 1142
     y: 588
     width: 336
     height: 451
@@ -773,20 +773,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts/UI/Menus/UI Items
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts/UI/Menus/UI Items
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Unity Projects\CraftProjectRepo\CraftProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ea360000
-    m_LastClickedID: 14058
-    m_ExpandedIDs: 00000000d6360000d8360000da360000dc36000000ca9a3b
+    m_SelectedIDs: fc360000
+    m_LastClickedID: 14076
+    m_ExpandedIDs: 00000000bc360000be360000c0360000c2360000f836000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,7 +814,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d6360000d8360000da360000dc360000
+    m_ExpandedIDs: 00000000bc360000be360000c0360000c2360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -839,24 +839,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 56f6ffff
-    m_LastClickedInstanceID: -2474
+    m_SelectedInstanceIDs: 1a360000
+    m_LastClickedInstanceID: 13850
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000074360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prefabs
-      m_OriginalName: Prefabs
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 14058
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_CreateAssetUtility:
@@ -937,8 +937,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0c360000
-      m_LastClickedID: 13836
+      m_SelectedIDs: 1a360000
+      m_LastClickedID: 13850
       m_ExpandedIDs: 6cfbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0

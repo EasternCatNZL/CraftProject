@@ -19,7 +19,12 @@ public class MenuItem : MonoBehaviour
         
     }
 
-    public virtual void Selected()
+    public virtual void Highlighted()
+    {
+
+    }
+
+    public virtual void Select()
     {
 
     }

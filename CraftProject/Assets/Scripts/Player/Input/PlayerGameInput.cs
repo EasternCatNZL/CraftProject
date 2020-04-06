@@ -32,6 +32,11 @@ public class PlayerGameInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    private void FixedUpdate()
+    {
         GetMoveInput();
     }
 
@@ -54,8 +59,12 @@ public class PlayerGameInput : MonoBehaviour
     private void OnEnable()
     {
         inputAction.Game.Enable();
+
         inputAction.Game.Move.performed += Move;
         inputAction.Game.Menu.performed += MenuButton;
+        
+        inputAction.Game.Move.Enable();
+        inputAction.Game.Menu.Enable();
     }
 
     private void OnDisable()
