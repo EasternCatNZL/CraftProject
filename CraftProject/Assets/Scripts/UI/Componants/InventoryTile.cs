@@ -12,6 +12,14 @@ public class InventoryTile : MonoBehaviour
     public Vector2 gridPosition = Vector2.zero;
 
     //Neighbour tile logic
+    public enum Direction
+    {
+        North,
+        South,
+        East,
+        West
+    }
+
     private InventoryTile northTile = null;
     private InventoryTile southTile = null;
     private InventoryTile eastTile = null;
@@ -62,5 +70,27 @@ public class InventoryTile : MonoBehaviour
         {
             westTile = wTile;
         }
+    }
+
+    //Get the neighbour in given direction
+    public InventoryTile GetNeighbour(Direction direction)
+    {
+        InventoryTile tile = null                   ;
+        switch (direction)
+        {
+            case Direction.North:
+                tile = northTile;
+                break;
+            case Direction.South:
+                tile = southTile;
+                break;
+            case Direction.East:
+                tile = eastTile;
+                break;
+            case Direction.West:
+                tile = westTile;
+                break;
+        }
+        return tile;
     }
 }

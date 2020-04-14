@@ -6,7 +6,8 @@ public class PlayerInventory : MonoBehaviour
 {
     public static PlayerInventory inventory;
 
-    private List<Item> playerInventory = new List<Item>();
+    //Public for testing purposes
+    public List<Item> playerInventory = new List<Item>();
 
     // Start is called before the first frame update
     void Start()

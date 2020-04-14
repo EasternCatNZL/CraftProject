@@ -7,6 +7,7 @@ public class MenuButtonLogic : MonoBehaviour
     [Header("Menu navigators")]
     public PauseMenuNavigator pauseMenu;
     public InventoryNavigator inventoryNavigator;
+    public OptionsNavigator optionsNavigator;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,6 @@ public class MenuButtonLogic : MonoBehaviour
 
     public void OptionsButton()
     {
-
+        optionsNavigator.OpenMenu();
     }
 }
